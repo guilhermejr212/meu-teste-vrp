@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste VRP</title>
+</head>
+<body>
+    <div id="app">
+      <h1>Busca do Google (Simulada)</h1>
+      <p>Você pesquisou por: <span id="query-display"></span></p>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        if (query) {
+          document.getElementById('query-display').innerHTML = query;
+        }
+    </script>
+</body>
+</html>
